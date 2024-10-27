@@ -10,7 +10,8 @@ import io.cucumber.java.en.When;
 import org.testng.Assert;
 
 public class MagentoSteps {
-    Elements elements=new Elements();
+    Elements elements = new Elements();
+
     @Given("Navigate to the website")
     public void navigateToTheWebsite() {
         GWD.getDriver().get("https://magento.softwaretestingboard.com/");
@@ -20,14 +21,22 @@ public class MagentoSteps {
     public void clickOnTheSingInButton() {
         elements.myClick(elements.singIn);
     }
+
     @When("Enter userName and Password and click sing in button")
     public void enterUserNameAndPasswordAndClickSingInButton() {
-        elements.mySenkeys(elements.email,"yusuf@gmail.com");
-        elements.mySenkeys(elements.password1,"Yusuf1234");
+        elements.mySenkeys(elements.email, "team3@gmail.com");
+        elements.mySenkeys(elements.password1, "Team31234");
         elements.myClick(elements.singIng2);
+    }
+
+    @When("The Forgot Your Password? should be displayed")
+    public void theForgotYourPasswordShouldBeDisplayed() {
+    Assert.assertTrue(elements.forgatPasswordButton.isEnabled());
     }
     @Then("User should login  successfully")
     public void userShouldLoginSuccessfully() {
         Assert.assertTrue(elements.loginSuccessfuly.getText().contains("Welcome"));
     }
+
+
 }
