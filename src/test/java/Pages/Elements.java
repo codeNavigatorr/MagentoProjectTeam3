@@ -23,6 +23,9 @@ public class Elements extends ParentPage {
     @FindBy(xpath = "//button[@class='action login primary']")
     public WebElement singIng2;
 
+    @FindBy(xpath = "(//span[text()='Forgot Your Password?'])[1]")
+    public WebElement forgatPasswordButton;
+
     @FindBy(xpath = "(//span[@class='logged-in'])[1]")
     public WebElement loginSuccessfuly;
     // buraya kadar

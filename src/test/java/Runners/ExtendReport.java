@@ -5,9 +5,9 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 
-        features = {""},
-        glue = {""},
-        plugin = {""}
+        features = {"src/test/java/FeatureFiles/LoginMagento.feature"},
+        glue = {"StepDefinitions"},
+        plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 )
 public class ExtendReport extends AbstractTestNGCucumberTests {
 }
