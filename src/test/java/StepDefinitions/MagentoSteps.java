@@ -31,12 +31,27 @@ public class MagentoSteps {
 
     @When("The Forgot Your Password? should be displayed")
     public void theForgotYourPasswordShouldBeDisplayed() {
-    Assert.assertTrue(elements.forgatPasswordButton.isEnabled());
+        Assert.assertTrue(elements.forgatPasswordButton.isEnabled());
     }
+
     @Then("User should login  successfully")
     public void userShouldLoginSuccessfully() {
         Assert.assertTrue(elements.loginSuccessfuly.getText().contains("Welcome"));
+
+
     }
 
 
+    @Then("SKU number should be displayed")
+    public void skuNumberShouldBeDisplayed() {
+        String skuNo = "MJ12";
+        String skuNo2 = elements.SKUNumber.getText();
+        Assert.assertEquals(skuNo, skuNo2);
+
+    }
+
+    @Then("Negative message notice should be displayed")
+    public void negativeMessageNoticeShouldBeDisplayed() {
+        Assert.assertTrue(elements.negativeMessageNotice.isDisplayed());
+    }
 }
