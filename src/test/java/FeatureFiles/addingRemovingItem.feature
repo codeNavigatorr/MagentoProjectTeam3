@@ -15,6 +15,8 @@ Feature: Adding/removing item Functionality
       |itemQTY|2|
       And Click on the Element
       |addToCart|
+      And The message product added to cart should appear.
+      And Click on the Element
       |shoppingCartBox|
       |deleteButton|
       |OK|

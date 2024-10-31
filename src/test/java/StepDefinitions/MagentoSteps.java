@@ -4,6 +4,7 @@ package StepDefinitions;
 import Pages.Elements;
 import Utilities.GWD;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -53,5 +54,12 @@ public class MagentoSteps {
     @Then("Negative message notice should be displayed")
     public void negativeMessageNoticeShouldBeDisplayed() {
         Assert.assertTrue(elements.negativeMessageNotice.isDisplayed());
+
     }
+
+    @And("The message product added to cart should appear.")
+    public void theMessageProductAddedToCartShouldAppear() {
+        elements.LoginContainsText(elements.addingMessage,"You added Radiant");
+    }
+
 }

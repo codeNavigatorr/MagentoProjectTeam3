@@ -93,7 +93,7 @@ public class Elements extends ParentPage {
     //4 us buraya kadar
 
     //USER STORY 5 LOCATORS***************************
-    @FindBy (xpath = "(//img[@alt='Radiant Tee'])[2]")
+    @FindBy (xpath = "(//div[@class='product-item-info'])[1]")
     public WebElement randomItem;
 
     @FindBy (xpath = "(//div[@class='swatch-option text'])[2]")
@@ -108,10 +108,10 @@ public class Elements extends ParentPage {
     @FindBy (css = "[class='action primary tocart']")
     public WebElement addToCart;
 
-    @FindBy (css = "[data-bind='html: $parent.prepareMessageForHtml(message.text)']")
+    @FindBy (xpath = "//div[@class='message-success success message']//div")
     public WebElement addingMessage;
 
-    @FindBy(css = "[class='action showcart active']")
+    @FindBy(xpath = "//a[@class='action showcart']")
     public WebElement shoppingCartBox;
 
     @FindBy (css = "[class='action delete']")

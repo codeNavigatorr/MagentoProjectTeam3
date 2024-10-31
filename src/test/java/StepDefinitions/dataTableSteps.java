@@ -4,6 +4,7 @@ import Pages.Elements;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
 import java.util.List;
 import java.util.SplittableRandom;
@@ -32,4 +33,6 @@ public class dataTableSteps {
 
         }
     }
+
+
 }
