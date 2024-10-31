@@ -43,11 +43,35 @@ public class Elements extends ParentPage {
 
     @FindBy(css = "[class='message notice']")
     public WebElement negativeMessageNotice;
+    //USER STORY 5 LOCATORS***************************
+    @FindBy (xpath = "(//img[@alt='Radiant Tee'])[2]")
+    public WebElement randomItem;
 
+    @FindBy (xpath = "(//div[@class='swatch-option text'])[2]")
+    public WebElement itemSize;
 
+    @FindBy (xpath = "(//div[@class='swatch-option color'])[2]")
+    public WebElement itemColor;
 
+    @FindBy (css = "[class='input-text qty']")
+    public WebElement itemQTY;
 
+    @FindBy (css = "[class='action primary tocart']")
+    public WebElement addToCart;
 
+    @FindBy (css = "[data-bind='html: $parent.prepareMessageForHtml(message.text)']")
+    public WebElement addingMessage;
+
+    @FindBy(css = "[class='action showcart active']")
+    public WebElement shoppingCartBox;
+
+    @FindBy (css = "[class='action delete']")
+    public WebElement deleteButton;
+
+    @FindBy (css = "[class='action-primary action-accept']")
+    public WebElement OK;
+
+    //************************************************
 public WebElement getWebElement(String elemenName)
 {
 switch (elemenName.trim())
@@ -57,6 +81,18 @@ switch (elemenName.trim())
     case "productPhoto" : return this.productPhoto;
     case "SKUNumber" : return this.SKUNumber;
     case "negativeMessageNotice" :return this.negativeMessageNotice;
+    case "randomItem" : return this.randomItem;
+    case "itemSize" :return this.itemSize;
+    case "itemColor" :return this.itemColor;
+    case "itemQTY" : return this.itemQTY;
+    case "addToCart" :return this.addToCart;
+    case "addingMessage" :return this.addingMessage;
+    case "shoppingCartBox" :return this.shoppingCartBox;
+    case "deleteButton" :return this.deleteButton;
+    case "OK" :return this.OK;
+
+
+
 }
 return null;
 }
