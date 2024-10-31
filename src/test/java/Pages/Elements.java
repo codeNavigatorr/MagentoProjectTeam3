@@ -71,6 +71,7 @@ public class Elements extends ParentPage {
     @FindBy (css = "[class='action-primary action-accept']")
     public WebElement OK;
 
+
     //************************************************
 public WebElement getWebElement(String elemenName)
 {
@@ -95,6 +96,7 @@ switch (elemenName.trim())
 
 }
 return null;
+    //Denemedir silicenek alan
 }
 
 }
