@@ -28,6 +28,8 @@ public class Elements extends ParentPage {
     @FindBy(xpath = "(//span[@class='logged-in'])[1]")
     public WebElement loginSuccessfuly;
     // buraya kadar
+
+
     //SearchFunctionalty
     @FindBy(css = "[placeholder='Search entire store here...']")
     public WebElement searchInput;
@@ -43,6 +45,53 @@ public class Elements extends ParentPage {
 
     @FindBy(css = "[class='message notice']")
     public WebElement negativeMessageNotice;
+
+    // US 4 TAb menu 
+    @FindBy(id = "ui-id-3")
+    public WebElement WhatsNew4;
+
+    @FindBy(xpath = "//span[text()='Women']")
+    public WebElement Women4;
+
+    @FindBy(xpath = "//span[text()='Men']")
+    public WebElement Men4;
+
+    @FindBy(xpath = "//span[text()='Gear']")
+    public WebElement Gear4;
+
+    @FindBy(xpath = "//span[text()='Training']")
+    public WebElement Training4;
+
+    @FindBy(xpath = "//span[text()='Sale']")
+    public WebElement Sale4;
+
+
+    @FindBy(xpath = "(//a[@class='ui-corner-all'])[1]")
+    public WebElement TopsWomen4;
+
+    @FindBy(xpath = "(//a[@class='ui-corner-all'])[6]")
+    public WebElement BottomsWomen4;
+
+    @FindBy(xpath = "(//a[@class='ui-corner-all'])[9]")
+    public WebElement TopsMen4;
+
+    @FindBy(xpath = "(//a[@class='ui-corner-all'])[14]")
+    public WebElement BottomsMen4;
+
+    @FindBy(xpath = "(//span[@class='ui-menu-icon ui-icon ui-icon-carat-1-e'])[2]")
+    public WebElement TopsWomenMenu4;
+
+    @FindBy(xpath = "(//span[@class='ui-menu-icon ui-icon ui-icon-carat-1-e'])[3]")
+    public WebElement  BottomsWomenMenu4;
+
+    @FindBy(xpath = "(//span[@class='ui-menu-icon ui-icon ui-icon-carat-1-e'])[5]")
+    public WebElement  TopsMenMenu4;
+
+    @FindBy(xpath = "(//span[@class='ui-menu-icon ui-icon ui-icon-carat-1-e'])[6]")
+    public WebElement  BottomsMenMenu4;
+
+    //4 us buraya kadar
+
     //USER STORY 5 LOCATORS***************************
     @FindBy (xpath = "(//img[@alt='Radiant Tee'])[2]")
     public WebElement randomItem;
@@ -92,11 +141,12 @@ switch (elemenName.trim())
     case "deleteButton" :return this.deleteButton;
     case "OK" :return this.OK;
 
-
-
 }
 return null;
-    //Denemedir silicenek alan
+
+
+
+
 }
 
 }
