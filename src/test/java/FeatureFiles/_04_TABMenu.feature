@@ -1,6 +1,6 @@
 Feature: TabMenu Functionality
 
-  Scenario:  TAB menu is displayed
+    Scenario:  TAB menu is displayed
     Given Navigate to the website
     When Click on the  sing in button
     When Enter userName and Password and click sing in button
