@@ -1,6 +1,6 @@
 # 🛒 Magento TR Sprint - Agile Software Testing Project
 
-🌟 **𝐁𝐢𝐫 𝐇𝐚𝐟𝐭𝐚𝐥ı𝐤 𝐒𝐩𝐫𝐢𝐧𝐭** 🌟   
+✨🚀 **ＢİＲ ＨＡＦＴＡＬＩＫ ＳＰＲİＮＴ** 🚀✨   
 **Proje URL**: https://magento.softwaretestingboard.com/
 
 ---
@@ -47,7 +47,7 @@ Projede kullanılan başlıca teknolojiler ve araçlar:
 
 ---
 
-## Proje Ekibi 👥
+## 👥💼 𝐏𝐫𝐨𝐣𝐞 𝐄𝐤𝐢𝐛𝐢 💼👥
 
 Bu projede görev alan ekip üyeleri:
 
