@@ -49,8 +49,6 @@ Projede kullanılan başlıca teknolojiler ve araçlar:
 
 ## 👥💼 𝐏𝐫𝐨𝐣𝐞 𝐄𝐤𝐢𝐛𝐢 💼👥
 
-Bu projede görev alan ekip üyeleri:
-
 - **Yusuf**
 - **Betul**
 - **Nese**
@@ -60,9 +58,6 @@ Bu projede görev alan ekip üyeleri:
 Ekip olarak, bu projede Scrum seremonileri ve Sprint adımlarını izleyerek çalışacağız. Hedefimiz, Magento’nun test süreçlerini başarıyla tamamlayarak proje çıktılarımızı SDLC ve STLC döngüleriyle uyumlu hale getirmektir.
 
 ---
-
-
-
 
 🛠🙂 **HAPPY CODING!** 🙂🛠
 
