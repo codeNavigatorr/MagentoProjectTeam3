@@ -1,18 +1,16 @@
-# TECHNO STUDY Agile Software Testing Project - Magento TR Sprint 🚀
+# 🛒 Magento TR Sprint - Agile Software Testing Project
 
-**Bir Haftalık Sprint**  
-**Proje URL**: [https://magento.softwaretestingboard.com/](https://magento.softwaretestingboard.com/)
+🌟 **𝐁𝐢𝐫 𝐇𝐚𝐟𝐭𝐚𝐥ı𝐤 𝐒𝐩𝐫𝐢𝐧𝐭** 🌟   
+**Proje URL**: https://magento.softwaretestingboard.com/
 
 ---
 
 ## Proje Tanımı 📄
 
-Magento, dünyanın en popüler e-ticaret platformlarından biridir ve her ölçekte işletme için uygun çözümler sunar. İki ana sürümü bulunmaktadır:
+Magento, dünyanın en popüler e-ticaret platformlarından biridir ve her ölçekte işletme için uygun çözümler sunar. 
 - **Magento Open Source**: Tamamen ücretsiz ve açık kaynaklı bir platformdur. Küçük işletmelerden büyük pazaryerlerine kadar birçok farklı ihtiyaç için idealdir.
-- **Magento Commerce**: Ücretli ve daha fazla özelliğe sahip sürümdür. Kurumsal ve geniş kapsamlı e-ticaret siteleri için daha kapsamlı araçlar sunar.
 
-Bu sprintte, Magento Open Source sürümünün demo ortamında test çalışmaları gerçekleştirilecek. Amaç, Magento'nun temel işlevselliklerini test etmek ve kullanıcı deneyimini iyileştirmektir. Daha fazla bilgi için [Magento Hakkında](https://www.hosting.com.tr/blog/magento/) sayfasını ziyaret edebilirsiniz.
-
+Bu sprintte, Magento Open Source sürümünün demo ortamında test çalışmaları gerçekleştirilecek. Amaç, Magento'nun temel işlevselliklerini test etmek ve kullanıcı deneyimini iyileştirmektir. 
 ---
 
 ## Kullanıcı Hikayeleri 📝
@@ -28,7 +26,7 @@ Sprint süresince üzerinde çalışılacak başlıca kullanıcı hikayeleri şu
 7. **US707 | Search Functionality**: Belirli bir ürünün ID (örneğin SKU #: MJ08) ile aranarak bulunması.
 8. **US708 | Wish List**: Ürünlerin favori listesine eklenip çıkarılmasının test edilmesi.
 
-> **Not**: Daha ayrıntılı kullanıcı hikayeleri bir Excel dosyası olarak sağlanacaktır.
+
 
 ---
 
@@ -42,11 +40,10 @@ Projede kullanılan başlıca teknolojiler ve araçlar:
 - **BDD Framework**: Cucumber
 - **Desen**: Page Object Model (POM)
 - **Bağımlılık Yönetimi**: Maven
-- **Dosya İşlemleri**: Apache POI (isteğe bağlı)
-- **Raporlama**: Extent Report veya benzeri bir araç
+- **Raporlama**: Extent Report 
 - **Versiyon Kontrol Sistemi**: Git ve GitHub
-- **Test Yönetim Aracı**: JIRA ve Zephyr/XRay
-- **Logging**: SLF4J (Simple Logging Facade for Java)
+- **Test Yönetim Aracı**: JIRA 
+
 
 ---
 
@@ -64,10 +61,8 @@ Ekip olarak, bu projede Scrum seremonileri ve Sprint adımlarını izleyerek ça
 
 ---
 
-## İletişim ve Destek
 
-Takım üyeleri, proje boyunca öneri ve sorularını Discord kanallarımız aracılığıyla paylaşabilir.  
+
+
 🛠🙂 **HAPPY CODING!** 🙂🛠
 
-**Techno Study**  
-[Web Sitesi](https://techno.study/) | [Instagram](https://www.instagram.com/techno.study/) | [YouTube](https://www.youtube.com/@Techno_Study)
