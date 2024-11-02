@@ -25,8 +25,8 @@ public class MagentoSteps {
 
     @When("Enter userName and Password and click sing in button")
     public void enterUserNameAndPasswordAndClickSingInButton() {
-        elements.mySenkeys(elements.email, "team3@gmail.com");
-        elements.mySenkeys(elements.password1, "Team31234");
+        elements.mySendKeys(elements.email, "team3@gmail.com");
+        elements.mySendKeys(elements.password1, "Team31234");
         elements.myClick(elements.singIng2);
     }
 

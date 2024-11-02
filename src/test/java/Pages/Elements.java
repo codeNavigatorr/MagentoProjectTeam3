@@ -7,6 +7,100 @@ import org.openqa.selenium.support.PageFactory;
 
 public class Elements extends ParentPage {
     public Elements() {PageFactory.initElements(GWD.getDriver(), this);}
+    //betul
+    @FindBy(xpath = "//*[@name='postcode']")
+    public WebElement zipcode;
+
+    @FindBy (xpath = "//*[@class='label' and @for='primary_billing']")
+    public  WebElement choicebillinaddress_magento;
+
+    @FindBy (xpath = "//*[@class='label' and @for='primary_shipping']")
+    public WebElement choiceShippingaddress_magento;
+
+    @FindBy(xpath = "//*[text()='OK']")
+    public WebElement deleteAddressOK_magento;
+
+    @FindBy (xpath = "//*[@class='action delete']")
+    public WebElement deleteaddress_magento;
+
+    @FindBy (xpath = "//*[@class='action primary add']")
+    public WebElement manageAddress;
+
+    @FindBy(xpath = "//*[text()='Add New Address']")
+    public WebElement addNewAdditionalAddress;
+
+    @FindBy(xpath = "//*[@class='action edit']")
+    public  WebElement addAdditionalnewAddresses_magento;
+
+    @FindBy (xpath = "(//*[@class='action edit'])[2]")
+    public WebElement editShippingAddress;
+
+    @FindBy (xpath = "//*[@class='action edit']")
+    public WebElement editBillingAddress;
+
+    @FindBy(xpath = "//div[@role='alert']/div/div")
+    public WebElement alertAddressSaved_magento;
+
+    @FindBy(xpath = "//*[@data-action='save-address']")
+    public WebElement save_address_magento;
+
+    @FindBy(xpath = "//option[@value='TR']")
+    public WebElement valueTRCountry_magento;
+
+    @FindBy(xpath = "//option[@value='TO']")
+    public WebElement valueTOCountry_magento;
+
+    @FindBy(xpath = "//option[@value='TH']")
+    public WebElement valueTHCountry_magento;
+
+    @FindBy(xpath = "//*[@name='postcode']")
+    public WebElement postcode_magento;
+
+    @FindBy(xpath = "//option[@value='1']")
+    public WebElement value1State_magento;
+
+    @FindBy(xpath = "//option[@value='2']")
+    public WebElement value2State_magento;
+
+    @FindBy(xpath = "//option[@value='3']")
+    public WebElement value3State_magento;
+
+    @FindBy(xpath = "//*[@id='region_id']")
+    public WebElement region_magento;
+
+    @FindBy(xpath = "//*[@name='city']")
+    public WebElement city_magento;
+
+    @FindBy(xpath = "//*[@name='street[]']")
+    public WebElement street_magento;
+
+    @FindBy(xpath = "//*[@name='telephone']")
+    public WebElement phoneNumber_magento;
+
+    @FindBy(xpath = "//*[text()='My Account']")
+    public WebElement myaccount_magento;
+
+    @FindBy(xpath = "//*[@class='action switch']")
+    public WebElement change_magento;
+
+    @FindBy(xpath ="(//*[@class='authorization-link'])[1]/a")
+    public WebElement signin_magento;
+
+    @FindBy(xpath ="//*[@name='login[username]']")
+    public WebElement email_magento;
+
+    @FindBy(xpath ="//*[@name='login[password]']")
+    public WebElement password_magento;
+
+    @FindBy(xpath ="(//*[text()='Address Book'])[2]")
+    public WebElement addressbook_magento;
+
+    @FindBy(xpath = "(//*[@name='send'])[1]")
+    public WebElement signinto_magento;
+
+    @FindBy(id="search")
+    public WebElement search;
+    //betul
 
     //Login elementleri
 
