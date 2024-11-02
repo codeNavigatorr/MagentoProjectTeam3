@@ -1,65 +1,57 @@
 package StepDefinitions;
 
-
 import Pages.Elements;
 import Utilities.GWD;
-
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
-public class MagentoSteps {
-    Elements elements = new Elements();
+import java.util.List;
 
-    @Given("Navigate to the website")
-    public void navigateToTheWebsite() {
+public class MagentoSteps {
+    WebDriver driver = new ChromeDriver();
+    Elements el = new Elements();
+
+
+    @Given("navigate to magento")
+    public void navigateToMagento() {
         GWD.getDriver().get("https://magento.softwaretestingboard.com/");
     }
 
-    @When("Click on the  sing in button")
-    public void clickOnTheSingInButton() {
-        elements.myClick(elements.singIn);
+    @When("Creat an account")
+    public void creatAnAccount(DataTable dtclick) {
+        List<String> account = dtclick.asList();
+
+        for (int i = 0; i < account.size(); i++) {
+            el.myClick(el.getWebElement(account.get(i)));
+        }
     }
 
-    @When("Enter userName and Password and click sing in button")
-    public void enterUserNameAndPasswordAndClickSingInButton() {
-        elements.mySendKeys(elements.email, "team3@gmail.com");
-        elements.mySendKeys(elements.password1, "Team31234");
-        elements.myClick(elements.singIng2);
+    @Then("enter the requested information")
+    public void enterTheRequestedInformation(DataTable dtBilgiler) {
+        List<List<String>> bilgiler = dtBilgiler.asLists();
+
+        for (int i = 0; i < bilgiler.size(); i++) {
+            el.mySendKeys(el.getWebElement(bilgiler.get(i).get(0)),bilgiler.get(i).get(1));
+
+        }
     }
 
-    @When("The Forgot Your Password? should be displayed")
-    public void theForgotYourPasswordShouldBeDisplayed() {
-        Assert.assertTrue(elements.forgatPasswordButton.isEnabled());
+    @And("Return to home page")
+    public void returnToHomePage() {
+        driver.navigate().back();
+
     }
 
-    @Then("User should login  successfully")
+    @And("User should login successfully")
     public void userShouldLoginSuccessfully() {
-        Assert.assertTrue(elements.loginSuccessfuly.getText().contains("Welcome"));
 
-
-    }
-
-
-    @Then("SKU number should be displayed")
-    public void skuNumberShouldBeDisplayed() {
-        String skuNo = "MJ12";
-        String skuNo2 = elements.SKUNumber.getText();
-        Assert.assertEquals(skuNo, skuNo2);
+            Assert.assertTrue(el.messageSuccess.getText().contains("Welcome"),"Hesap olusturulamadi");
 
     }
-
-    @Then("Negative message notice should be displayed")
-    public void negativeMessageNoticeShouldBeDisplayed() {
-        Assert.assertTrue(elements.negativeMessageNotice.isDisplayed());
-
-    }
-
-    @And("The message product added to cart should appear.")
-    public void theMessageProductAddedToCartShouldAppear() {
-        elements.LoginContainsText(elements.addingMessage,"You added Radiant");
-    }
-
 }
