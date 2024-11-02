@@ -214,6 +214,30 @@ public class Elements extends ParentPage {
     @FindBy (css = "[class='action-primary action-accept']")
     public WebElement OK;
 
+    @FindBy(xpath = "//div[@class='message global demo']//following::div[@class='page-wrapper']//a[@class='action skip contentarea']//following-sibling::ul//a[text()='Create an Account']")
+    public WebElement creatAccount;
+
+    @FindBy(xpath = "//input[@id='firstname']")
+    public WebElement firstName;
+
+    @FindBy(xpath = "//input[@id='lastname']")
+    public WebElement lastName;
+
+    @FindBy(xpath = "//input[@name='email']")
+    public WebElement Email;
+
+    @FindBy(xpath = "//input[@id='password']")
+    public WebElement password;
+
+    @FindBy(xpath = "//input[@id='password-confirmation']")
+    public WebElement ConfirmPassword;
+
+    @FindBy(xpath = "//button/span[text()='Create an Account']")
+    public WebElement creartAccountBTN;
+
+    @FindBy(xpath = "//a[@class='action skip contentarea']//following-sibling::ul//span[@class='logged-in']")
+    public WebElement messageSuccess;
+
 
     //************************************************
 public WebElement getWebElement(String elemenName)
@@ -234,6 +258,14 @@ switch (elemenName.trim())
     case "shoppingCartBox" :return this.shoppingCartBox;
     case "deleteButton" :return this.deleteButton;
     case "OK" :return this.OK;
+    case "creatAccount" : return this.creatAccount;
+    case "firstName" : return  this.firstName;
+    case "lastName" : return  this.lastName;
+    case "Email" : return  this.Email;
+    case "password" : return  this.password;
+    case "ConfirmPassword" : return  this.ConfirmPassword;
+    case "creartAccountBTN" : return  this.creartAccountBTN;
+    case "messageSuccess" : return  this.messageSuccess;
 
 }
 return null;
