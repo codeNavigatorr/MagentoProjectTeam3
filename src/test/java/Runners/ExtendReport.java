@@ -6,6 +6,8 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 
         features = {"src/test/java/FeatureFiles/LoginMagento.feature","src/test/java/FeatureFiles/serchFunctionality.feature"},
+
+
         glue = {"StepDefinitions"},
         plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 )

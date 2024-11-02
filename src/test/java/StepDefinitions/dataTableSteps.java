@@ -19,7 +19,7 @@ public class dataTableSteps {
         List<List<String>>yazi=dtYazi.asLists();
         for (int i = 0; i <yazi.size() ; i++) {
            WebElement kutu=elements.getWebElement(yazi.get(i).get(0));
-           elements.mySenkeys(kutu,yazi.get(i).get(1));
+           elements.mySendKeys(kutu,yazi.get(i).get(1));
 
         }
 

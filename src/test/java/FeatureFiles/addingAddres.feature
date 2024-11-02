@@ -1,5 +1,6 @@
 Feature: Login to Magento Functionality
 
+
   Scenario Outline:
     Given Navigate to Magento
     When Enter username and password and click login button at Magento
