@@ -19,7 +19,7 @@ public class ParentPage {
         element.click();
     }
 
-    public void mySenkeys(WebElement element, String yazi) {
+    public void mySendKeys(WebElement element, String yazi) {
         wait.until(ExpectedConditions.visibilityOf(element));
         scrolltoElement(element);
         element.clear();
