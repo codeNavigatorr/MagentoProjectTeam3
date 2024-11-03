@@ -7,7 +7,7 @@
 
 ## Proje Tanımı 📄
 
-Magento, dünyanın en popüler e-ticaret platformlarından biridir ve her ölçekte işletme için uygun çözümler sunar. 
+Magento, popüler e-ticaret platformlarından biridir ve her ölçekte işletme için uygun çözümler sunar. 
 - **Magento Open Source**: Tamamen ücretsiz ve açık kaynaklı bir platformdur. Küçük işletmelerden büyük pazaryerlerine kadar birçok farklı ihtiyaç için idealdir.
 
 Bu sprintte, Magento Open Source sürümünün demo ortamında test çalışmaları gerçekleştirilecek. Amaç, Magento'nun temel işlevselliklerini test etmek ve kullanıcı deneyimini iyileştirmektir. 
