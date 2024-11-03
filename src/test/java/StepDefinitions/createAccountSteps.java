@@ -9,13 +9,17 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import java.time.Duration;
 import java.util.List;
 
-public class MagentoSteps {
+public class createAccountSteps {
     WebDriver driver = new ChromeDriver();
-    Elements el = new Elements();
+    Elements elements = new Elements();
+    WebDriverWait wait=new WebDriverWait(GWD.getDriver(), Duration.ofSeconds(15));
 
 
     @Given("navigate to magento")
@@ -28,7 +32,7 @@ public class MagentoSteps {
         List<String> account = dtclick.asList();
 
         for (int i = 0; i < account.size(); i++) {
-            el.myClick(el.getWebElement(account.get(i)));
+            elements.myClick(elements.getWebElement(account.get(i)));
         }
     }
 
@@ -37,7 +41,7 @@ public class MagentoSteps {
         List<List<String>> bilgiler = dtBilgiler.asLists();
 
         for (int i = 0; i < bilgiler.size(); i++) {
-            el.mySendKeys(el.getWebElement(bilgiler.get(i).get(0)),bilgiler.get(i).get(1));
+            elements.mySendKeys(elements.getWebElement(bilgiler.get(i).get(0)),bilgiler.get(i).get(1));
 
         }
     }
@@ -50,8 +54,8 @@ public class MagentoSteps {
 
     @And("User should login successfully")
     public void userShouldLoginSuccessfully() {
-
-            Assert.assertTrue(el.messageSuccess.getText().contains("Welcome"),"Hesap olusturulamadi");
+            wait.until(ExpectedConditions.visibilityOf(elements.messageSuccess));
+            Assert.assertTrue(elements.messageSuccess.getText().contains("Welcome"),"Hesap olusturulamadi");
 
     }
 }

@@ -6,9 +6,7 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 
-import java.sql.Driver;
-
-public class TabMenu {
+public class tabMenuSteps {
     Elements elements=new Elements();
     Actions actions=new Actions(GWD.getDriver());
     @When("Clicking on each main category should display relevant subcategories.")

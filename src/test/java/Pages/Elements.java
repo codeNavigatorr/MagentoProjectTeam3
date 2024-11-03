@@ -119,7 +119,7 @@ public class Elements extends ParentPage {
     @FindBy(xpath = "(//span[text()='Forgot Your Password?'])[1]")
     public WebElement forgatPasswordButton;
 
-    @FindBy(xpath = "(//span[@class='logged-in'])[1]")
+    @FindBy(xpath = "(//li[@class='greet welcome'])[1]")
     public WebElement loginSuccessfuly;
     // buraya kadar
 
@@ -131,7 +131,7 @@ public class Elements extends ParentPage {
     @FindBy(css = "[class='action search']")
     public WebElement searchButton;
 
-    @FindBy(css = "[class='product-image-photo']")
+    @FindBy(css = "[alt='Proteus Fitness Jackshirt']")
     public WebElement productPhoto;
 
     @FindBy(css = "[itemprop='sku']")
@@ -186,7 +186,7 @@ public class Elements extends ParentPage {
 
     //4 us buraya kadar
 
-    //USER STORY 5 LOCATORS***************************
+
     @FindBy (xpath = "(//div[@class='product-item-info'])[1]")
     public WebElement randomItem;
 
@@ -202,7 +202,7 @@ public class Elements extends ParentPage {
     @FindBy (css = "[class='action primary tocart']")
     public WebElement addToCart;
 
-    @FindBy (xpath = "//div[@class='message-success success message']//div")
+    @FindBy (css = "[data-ui-id='message-success']")
     public WebElement addingMessage;
 
     @FindBy(xpath = "//a[@class='action showcart']")

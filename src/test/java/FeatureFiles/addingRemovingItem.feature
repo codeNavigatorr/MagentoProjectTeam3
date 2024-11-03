@@ -1,11 +1,13 @@
 Feature: Adding/removing item Functionality
-  Background:
+
+
+  Scenario: Adding/removing item from shopping cart
+
+
     Given Navigate to the website
     When Click on the  sing in button
     When Enter userName and Password and click sing in button
     Then User should login  successfully
-
-  Scenario: Adding/removing item from shopping cart
       And Click on the Element
       |randomItem|
       |itemSize|

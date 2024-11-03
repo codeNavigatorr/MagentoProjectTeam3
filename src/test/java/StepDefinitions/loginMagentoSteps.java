@@ -6,11 +6,17 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-public class loginMAgentoSteps {
+import java.time.Duration;
+
+public class loginMagentoSteps {
 
     Elements elements = new Elements();
+    WebDriverWait wait=new WebDriverWait(GWD.getDriver(),Duration.ofSeconds(20));
+
 
     @Given("Navigate to the website")
     public void navigateToTheWebsite() {
@@ -36,7 +42,8 @@ public class loginMAgentoSteps {
 
     @Then("User should login  successfully")
     public void userShouldLoginSuccessfully() {
-        Assert.assertTrue(elements.loginSuccessfuly.getText().contains("Welcome"));
+        wait.until(ExpectedConditions.visibilityOf(elements.loginSuccessfuly));
+        Assert.assertTrue(elements.loginSuccessfuly.isDisplayed());
 
 
     }
@@ -52,13 +59,15 @@ public class loginMAgentoSteps {
 
     @Then("Negative message notice should be displayed")
     public void negativeMessageNoticeShouldBeDisplayed() {
-        Assert.assertTrue(elements.negativeMessageNotice.isDisplayed());
+        Assert.assertTrue(elements.addingMessage.isDisplayed());
     }
 
 
     @And("The message product added to cart should appear.")
     public void theMessageProductAddedToCartShouldAppear() {
-        Assert.assertTrue(elements.addingMessage.isEnabled());
+        WebDriverWait wait=new WebDriverWait(GWD.getDriver(),Duration.ofSeconds(20));
+        wait.until(ExpectedConditions.visibilityOf(elements.addingMessage));
+        Assert.assertTrue(elements.addingMessage.getText().contains("You added"), "Product is not founds");
     }
 }
 

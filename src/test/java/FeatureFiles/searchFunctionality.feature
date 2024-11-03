@@ -5,7 +5,7 @@ Feature: Search Functionality
     When Enter userName and Password and click sing in button
     Then User should login  successfully
 
-
+@SmokeTest
   Scenario: Search item with SKU code
     And User sendKeys in the Element
       |searchInput|MJ12|
